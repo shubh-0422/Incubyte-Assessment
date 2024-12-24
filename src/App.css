@@ -1,0 +1,94 @@
+/* Container styles */
+.calculator-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Heading style */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Textarea for input */
+.input-textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+/* Button style */
+.calculate-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+  background-color: #45a049;
+}
+
+/* Result text */
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .calculator-container {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  .input-textarea {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .calculate-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 18px;
+  }
+
+  .input-textarea {
+      font-size: 14px;
+      padding: 6px;
+  }
+
+  .calculate-button {
+      font-size: 14px;
+      padding: 6px 12px;
+  }
+}
